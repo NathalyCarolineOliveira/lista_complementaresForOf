@@ -6,11 +6,22 @@
     */
 
     //Entrada
-
+    const palavra = (prompt(`Informe uma palavra`).trim().toUpperCase());
 
     //Processamento
+    let vogal = 0;
+    let consoante = 0;
 
+    for (const item of palavra) {
+        if (item == "A" || item == "E" || item == "I" || item == "O" || item == "U") {
+            vogal = vogal + 1
+        }
+        else {
+            consoante = consoante + 1
+        }
+    }
 
     //Saída
+    alert(`Vogais: ${vogal} \nConsoantes: ${consoante}`)
 
 </script>
